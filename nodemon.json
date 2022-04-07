@@ -1,0 +1,10 @@
+{
+    "env":{
+        "DB_USER": "rupeshraut",
+        "DB_PASSWORD": "15ccZW8G940Rt2ya",
+        "DB_CLUSTER_NAME": "cluster0",
+        "DB_NAME": "Borroww",
+        "JWT_KEY": "b6430cf05ea2b97f566da0b9b4a460470249468dd731c9fdc277a29be94864a6ed9a27cff691cfffdc18e3d27334551ac2e76d4d81d5404ef49f67c251a6b98a",
+        "FAST_TWO_SMS_KEY": "EJwQ5dZPkYSMcvH2LVxiA7yUsahbDrzuCR6qp09T4WNGfeKB1mnWF09HTUJrhEdVKzNpg5fibuD3a6cR"
+    }
+}
