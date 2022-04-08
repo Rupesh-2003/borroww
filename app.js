@@ -22,7 +22,7 @@ if(process.env.NODE_ENV === 'production') {
 mongoose.connect(
     `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_CLUSTER_NAME}.zhgqg.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`
 ).then(() => {
-    app.listen(9000)
+    app.listen(process.env.PORT || 9000)
     console.log("Connection successful!!")
 }).catch((err) => {
     console.log(err)
