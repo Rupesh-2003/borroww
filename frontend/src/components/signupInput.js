@@ -145,7 +145,7 @@ const SignupInput = (props) => {
             return
         }
         axios
-        .post('http://localhost:9000/signup', {
+        .post(`${process.env.REACT_APP_BACKEND_URL}/signup`, {
             name: name,
             mobileNumber: number,
             gender: gender

@@ -80,7 +80,7 @@ const OTPInput = (props) => {
             return
         }
         axios
-        .post('http://localhost:9000/login', {
+        .post(`${process.env.REACT_APP_BACKEND_URL}/login`, {
             mobileNumber: props.mobileNumber,
             otp: parseInt(otp)
         })

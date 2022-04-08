@@ -106,7 +106,7 @@ const Home = () => {
             history.push('/login')
         }
         axios
-            .get('http://localhost:9000/getBorrowRequests',{ 
+            .get(`${process.env.REACT_APP_BACKEND_URL}/getBorrowRequests`,{ 
                 headers: {"Authorization" : `Bearer ${accessToken}`} 
             })
             .then((res) => {
@@ -125,7 +125,7 @@ const Home = () => {
         const accessToken = localStorage.getItem('accessToken')
         const borrowRequest = state
         axios
-        .post('http://localhost:9000/addBorrowRequest', {
+        .post(`${process.env.REACT_APP_BACKEND_URL}/addBorrowRequest`, {
             borrowRequest
         },{
             headers: {

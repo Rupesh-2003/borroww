@@ -98,7 +98,7 @@ const LoginInput = (props) => {
             return
         }
         axios
-        .post('http://localhost:9000/sendotp', {
+        .post(`${process.env.REACT_APP_BACKEND_URL}/sendotp`, {
             mobileNumber: number
         })
         .then((res) => {
